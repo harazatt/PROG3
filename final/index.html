@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+       <script src="/socket.io/socket.io.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+
+
+
+   
+    <script src="script.js"></script>
+
+
+  
+
+    <style>
+        div{
+            display:inline-block;
+        }
+        .legend-color{
+            border: 2px solid;
+        }
+        .gorciqner {
+            position: absolute;
+            left: 900px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>  </h1>
+        <table id="legend">
+                <tr>
+                    <td class="legend-color">Գույն</td>
+                    <td class="legend-color">Անվանում</td>
+                    <td class="legend-color">Շարժվում է</td>
+                    <td class="legend-color">Ուտում է</td>
+                    <td class="legend-color">Բազմանում է</td>
+                    <td class="legend-color">Սատկում է</td>
+                </tr>
+        
+                <tr>
+                    <td class="legend-color" style="background-color:gray"></td>
+                    <td class="legend-color">Դատարկ վանդակներ</td>
+                    <td class="legend-color"></td>
+                    <td class="legend-color"></td>
+                    <td class="legend-color"></td>
+                    <td class="legend-color"></td>
+                </tr>
+                <tr class="tr1">
+                    <td class="legend-color" style="background-color:green"></td>
+                    <td class="legend-color">Խոտ</td>
+                    <td class="legend-color"></td>
+                    <td class="legend-color"></td>
+                    <td class="legend-color">Մոտակա 8 վանդակներում, 2 տակտը մեկ</td>
+                    <td class="legend-color"></td>
+                </tr>
+                <tr>
+                    <td class="legend-color" style="background-color:yellow"></td>
+                    <td class="legend-color">Խոտակեր</td>
+                    <td class="legend-color">Մոտակա 8 վանդակներում, էներգիան քչանում է 1֊ով</td>
+                    <td class="legend-color">Խոտերին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 1֊ով</td>
+                    <td class="legend-color">Բազմանում է մոտակա տարածքներում, երբ էներգիան 10֊ից ավել է</td>
+                    <td class="legend-color">Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+                </tr>
+                <tr>
+                    <td class="legend-color" style="background-color:red"></td>
+                    <td class="legend-color">Գիշատիչ</td>
+                    <td class="legend-color">Մոտակա 8 վանդակներում, էներգիան քչանում է 1֊ով</td>
+                    <td class="legend-color">Խոտակերներին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 1֊ով</td>
+                    <td class="legend-color">Բազմանում է մոտակա տարածքներում, երբ էներգիան = 10</td>
+                    <td class="legend-color">Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+                </tr>
+            </table>
+            <p id="weather"></p>
+            <div class="gorciqner">
+                    <p>
+                        <button onclick = "killAll()">Kill All</button>
+                    </p> 
+                    <p> <button onclick = "Bomb()">Bomb</button></p>
+                    <button onclick = "pushEatgrass()">Push Eatgrass</button> <br>
+                    <button onclick = "XotAvelacnel()">Avelacnel Xot</button> <br>
+                    <button onclick = "XotakerAvelacnel()">Avelacnel Xotaker</button> <br>
+                    <button onclick = "GishatichAvelacnel()">Avelacnel Gishatich</button> <br>
+                    <button onclick = "GazanAvelacnel()">Avelacnel Gazan</button> <br>
+                    <button onclick = "MardAvelacnel()">Avelacnel Mard</button> <br>
+
+
+
+
+                    
+           </div>
+
+             <style>
+           
+            </style>
+            <!-- <div class="tools"> 
+                <h1 style="color:red">God's tools</h1>
+                <ul>
+                    <li id="killer">
+                        <button onclick="killAll()">Kill Them All</button>
+                    </li>
+                    <li>
+                        <button onclick="stormCall()">Call A Storm</button>
+                    </li>
+                    <li>
+                            <button onclick="pushGrasses()">Push Grasses</button>
+                    </li>
+                    <li>
+                        <button onclick="pushGrassEaters()">Push GrassEaters</button>
+                    </li>
+                    <li>
+                        <button onclick="pushHunters()">Push Hunters</button>
+                    </li>
+                </ul>
+            </div> -->
+        
+  
+</body>
+
+</html>
