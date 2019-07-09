@@ -1,1 +1,1 @@
-# PROG3
+# Game of Life
